@@ -1,0 +1,51 @@
+title: DN HVAC Tech Pvt Ltd
+tagline: "Inspired by Purpose, Guided by Values"
+description: >-
+  DN HVAC Tech Pvt Ltd services, installs and commissions air conditioning,
+  refrigeration and cold-storage systems across West Bengal — from split ACs
+  to central plants, walk-in coolers and deep freezers.
+url: "https://dnhvactech.co.in"
+baseurl: ""
+
+company:
+  legal_name: "DN HVAC Tech Private Limited"
+  short_name: "DN HVAC Tech"
+  cin: "U95221WR2026PTC294405"
+  gstin: "19AAMCD7670C1ZE"
+  incorporated: "1 June 2026"
+  address_line1: "H.No. 338, Charapole, Kampa"
+  address_line2: "Kanchrapara, North 24 Parganas"
+  address_line3: "West Bengal – 743193"
+  phone_primary: "8970013005"
+  phone_secondary: "8793397713"
+  email: "dnhvactech@gmail.com"
+  website: "www.dnhvactech.co.in"
+  directors:
+    - name: "Sudip Nath"
+      title: "Managing Director"
+      initials: "SN"
+    - name: "Amrita Ashok Chatterjee"
+      title: "Director"
+      initials: "AC"
+
+markdown: kramdown
+permalink: /:title/
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+sass:
+  style: compressed
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - notes.md
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

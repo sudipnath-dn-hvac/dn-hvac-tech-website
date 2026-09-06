@@ -1,0 +1,88 @@
+---
+layout: default
+title: About
+permalink: /about/
+description: "About DN HVAC Tech Pvt Ltd — a private limited HVAC and refrigeration company registered in West Bengal."
+---
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="page-hero__kicker">About the company</span>
+    <h1>A West Bengal HVAC company, built to run for the long term.</h1>
+    <p>{{ site.company.legal_name }} was incorporated on {{ site.company.incorporated }} as a company limited by shares, registered out of Kanchrapara, North 24 Parganas.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>What we're set up to do</h2>
+      <p>Our memorandum of association covers both sides of the business: keeping cooling and refrigeration equipment running, and putting new systems in — for homes, businesses and cold-chain operations.</p>
+    </div>
+
+    <div class="capability-grid">
+      <div class="capability-col">
+        <h3>Core objects</h3>
+        <ul>
+          <li>Servicing, repairing, maintaining, overhauling and reconditioning domestic, commercial and industrial air conditioning units, central plants, refrigerators, freezers and cooling appliances</li>
+          <li>Installation, commissioning and erection of air conditioning systems, cold storage equipment and refrigeration plants</li>
+        </ul>
+      </div>
+      <div class="capability-col">
+        <h3>Registered as</h3>
+        <ul>
+          <li>Private company limited by shares, Companies Act, 2013</li>
+          <li>Registered office in West Bengal</li>
+          <li>GST-registered for regular supply of goods and services</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Leadership</h2>
+    </div>
+    <div class="people-grid">
+      {% for person in site.company.directors %}
+      <div class="person">
+        <div class="person__mono">{{ person.initials }}</div>
+        <div>
+          <h3>{{ person.name }}</h3>
+          <span>{{ person.title }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Registration details</h2>
+      <p>For procurement and vendor-onboarding paperwork.</p>
+    </div>
+    <div class="contact-card" style="max-width: 620px;">
+      <div class="contact-line"><span>Legal name</span><span>{{ site.company.legal_name }}</span></div>
+      <div class="contact-line"><span>CIN</span><span>{{ site.company.cin }}</span></div>
+      <div class="contact-line"><span>GSTIN</span><span>{{ site.company.gstin }}</span></div>
+      <div class="contact-line"><span>Incorporated</span><span>{{ site.company.incorporated }}</span></div>
+      <div class="contact-line"><span>Registered office</span><span>{{ site.company.address_line1 }}, {{ site.company.address_line2 }}</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap cta-band__row">
+    <div>
+      <h2>Want to work with us?</h2>
+      <p>Reach out with your requirement — residential, commercial or cold-chain.</p>
+    </div>
+    <div class="cta-band__actions">
+      <a class="btn btn--primary" href="{{ '/contact/' | relative_url }}">Get in touch</a>
+    </div>
+  </div>
+</section>
