@@ -1,0 +1,44 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__grid">
+
+    <div class="footer-col footer-col--brand">
+      <img class="footer-mark" src="{{ '/assets/img/logo.png' | relative_url }}" alt="" width="52" height="52">
+      <p class="footer-name">{{ site.company.legal_name }}</p>
+      <p class="footer-tagline">{{ site.tagline }}</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <ul class="footer-list">
+        <li><a href="tel:+91{{ site.company.phone_primary }}">{{ site.company.phone_primary }}</a></li>
+        <li><a href="tel:+91{{ site.company.phone_secondary }}">{{ site.company.phone_secondary }}</a></li>
+        <li><a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a></li>
+        <li>{{ site.company.website }}</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Registered office</h3>
+      <address class="footer-address">
+        {{ site.company.address_line1 }}<br>
+        {{ site.company.address_line2 }}<br>
+        {{ site.company.address_line3 }}
+      </address>
+    </div>
+
+    <div class="footer-col">
+      <h3>Registration</h3>
+      <ul class="footer-list footer-list--data">
+        <li><span>CIN</span>{{ site.company.cin }}</li>
+        <li><span>GSTIN</span>{{ site.company.gstin }}</li>
+        <li><span>Incorporated</span>{{ site.company.incorporated }}</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="wrap site-footer__bottom">
+    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.company.legal_name }}. All rights reserved.</p>
+    <p>Company limited by shares, incorporated under the Companies Act, 2013.</p>
+  </div>
+</footer>

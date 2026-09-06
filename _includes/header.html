@@ -1,0 +1,23 @@
+<header class="site-header">
+  <div class="wrap site-header__bar">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img class="brand__mark" src="{{ '/assets/img/logo.png' | relative_url }}" alt="DN HVAC Tech shield emblem" width="44" height="44">
+      <span class="brand__text">
+        <span class="brand__name">DN&nbsp;HVAC&nbsp;Tech</span>
+        <span class="brand__sub">Pvt&nbsp;Ltd</span>
+      </span>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="nav-burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="is-active"{% endif %}>Home</a>
+      <a href="{{ '/services/' | relative_url }}"{% if page.url == '/services/' %} class="is-active"{% endif %}>Services</a>
+      <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} class="is-active"{% endif %}>About</a>
+      <a href="{{ '/contact/' | relative_url }}" class="site-nav__cta">Get a quote</a>
+    </nav>
+  </div>
+</header>
